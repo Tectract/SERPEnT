@@ -30,7 +30,7 @@ Here is an example list of the adjustable parameters for the surface energy shap
 
 Surface energy shapes are currently generated using bezier surfaces, but one goal of this project is to upgrade this component so they use NURBS curved surfaces instead, so that less parameters can be used to control the generation of surface energy shapes, and so that they can be programmed to more naturally follow theorized surface energy shapes which have no sharp edges or "jump discontinuities", and are normal to all planes and perpendicular to all edges and vertices. 
 
-For more information on how crystal surface energy is evaluated, please refer to "[Characterization, Modeling, and Simulation of Multiscale Directed-Assembly Systems](http://www.unm.edu/~reason/RAM_dissertation_final.pdf)", Molecke 2011. 
+For more information on how crystal surface energy is evaluated, please refer to "[Characterization, Modeling, and Simulation of Multiscale Directed-Assembly Systems](http://www.unm.edu/~reason/RAM_dissertation_final.pdf)", Molecke 2011, pages 16-46.
 
 SERPEnT is a collection of MATLAB scripts, currently. They will eventually be translated to C++ and/or other languages. This tool should allow generation of arbitrary crystal surface shapes and surface energy shapes, which can be used to calculate anistropic crystal interactional energies with external particles, or inside of a solid crystal, due to intermolecular forces. 
 
