@@ -76,7 +76,8 @@ So each line in the ECS input array has a real directional vector in 3D-space, a
 
 There is a divisor param to help cure rounding errors related to computation of the edge and vertex locations. If 10 doesn't work, try 100. If 100 doesn't work, try 1000.
 
-Surface energy shapes are currently generated using bezier surfaces, but one goal of this project is to upgrade this component so they use NURBS curved surfaces instead, so that less parameters can be used to control the generation of surface energy shapes, and so that they can be programmed to more naturally follow theorized surface energy shapes which have no sharp edges or "jump discontinuities". In my dissertation I positted that although crystal surface energy shapes are non-unique, they are constrained to be normal to all planes and perpendicular to all edges and vertices.
+Surface energy shapes are currently generated using bezier surfaces, but one goal of this project is to upgrade this component so they use NURBS curved surfaces instead, so that less parameters can be used to control the generation of surface energy shapes, and so that they can be programmed to more naturally follow theorized surface energy shapes which have no sharp edges or "jump discontinuities". The Wulff shape is the convex
+inner shape bounded by all tangents to an outer surface energy shape (SES). In my dissertation I positted that although crystal surface energy shapes are non-unique, they are constrained to be normal to all planes (by the Wulff contruction theory) AND ALSO perpendicular to all edges and vertices.
 
 For more information on how crystal surface energy is evaluated, please refer to "[Characterization, Modeling, and Simulation of Multiscale Directed-Assembly Systems](http://www.unm.edu/~reason/RAM_dissertation_final.pdf)", Molecke 2011, pages 16-46.
 
