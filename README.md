@@ -31,24 +31,39 @@ Here is an example list of the adjustable parameters for the surface energy shap
 Here is an example of the surface energy params that specify a cuboctahedron equilibrium crystal shape:
 
 divisor = 10;     % use a divisor here to cure (irrational-number rounding) tolerance errors (RAM)
+
 a=1/divisor;
+
 a1=1.156/divisor;
 
 WulffECS = [
+
 0	0	1	a       255   255   102   % light yellow
+
 0	0      -1	a       255   255   102
+
 0	1	0	a       255   255   102
+
 0      -1	0	a       255   255   102
+
 1	0	0	a       255   255   102
+
 -1	0	0	a       255   255   102
 
 1	1	1	a1       226   226   0    % medium yellow
+
 -1	1	1	a1       226   226   0
+
 1	-1	1	a1       226   226   0
+
 -1	-1	1	a1       226   226   0
+
 1	1	-1	a1       226   226   0
+
 -1	1	-1	a1       226   226   0
+
 1	-1	-1	a1       226   226   0
+
 -1	-1	-1	a1       226   226   0
 
 ];
