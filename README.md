@@ -68,7 +68,11 @@ WulffECS = [
 
 ];
 
+So in this example, a cuboctahedron is characterized by two sets of planes, the simple cubic faces and the corner facets. The facets are set to have a surface energy that is 1.156 times the unitized surface energy of the cubic facets. So the facet surface energies are specified in a ratio with a chosen surface energy unitized to 1, usually I chose the planar surface or set of surfaces that lies closest to the origin to unitize as the basis for the surface energy ratios, so the other surface energies which are further from the origin would have energies greater than 1, but this is not a strict requirement for the tool to work.
 
+So each line in the ECS input array has a real directional vector in 3D-space, a real energy param, which in this example is a for the cubic faces and a1 for the corner facets, and 3 integers for RGB color.
+
+There is a divisor param to help cure rounding errors related to computation of the edge and vertex locations. If 10 doesn't work, try 100. If 100 doesn't work, try 1000.
 
 Surface energy shapes are currently generated using bezier surfaces, but one goal of this project is to upgrade this component so they use NURBS curved surfaces instead, so that less parameters can be used to control the generation of surface energy shapes, and so that they can be programmed to more naturally follow theorized surface energy shapes which have no sharp edges or "jump discontinuities". In my dissertation I positted that although crystal surface energy shapes are non-unique, they are constrained to be normal to all planes and perpendicular to all edges and vertices.
 
