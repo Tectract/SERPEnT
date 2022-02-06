@@ -70,7 +70,7 @@ WulffECS = [
 
 ];
 
-So in this example, a cuboctahedron is characterized by two sets of planes, the simple cubic faces and the corner facets. The corner facets are set to have a surface energy that is 1.156 times the unitized surface energy of the cubic facets. So the facet surface energies are specified in a ratio with a chosen surface energy unitized to 1, usually I chose the planar surface or set of surfaces that lies closest to the origin to unitize as the basis for the surface energy ratios, so the other surface energies for facets which are further from the origin would have energies greater than 1, but this is not a strict requirement for the tool to work.
+So in this example, a cuboctahedron is characterized by two sets of planes, the simple cubic faces and the corner facets. The corner facets are set to have a surface energy that is 1.156 times the unitized surface energy of the cubic facets. So the facet surface energies are specified in a ratio with a chosen surface energy unitized to 1, usually I chose the planar surface or set of surfaces that lies closest to the origin to unitize as the basis for the surface energy ratios, so the other surface energies for facets which are further from the origin would have real values greater than 1, but this is not a strict requirement for the tool to work.
 
 So each line in the ECS input array has a real directional vector in 3D-space, a real energy param, which in this example is a for the cubic faces and a1 for the corner facets, and 3 integers for RGB color.
 
